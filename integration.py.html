@@ -25,24 +25,90 @@ integration.py</font>
 <span class="s2">def </span><span class="s1">print_hi(name):</span>
     <span class="s0"># Use a breakpoint in the code line below to debug your script.</span>
     <span class="s1">print(</span><span class="s3">f'Hi, </span><span class="s2">{</span><span class="s1">name</span><span class="s2">}</span><span class="s3">'</span><span class="s1">)  </span><span class="s0"># Press Ctrl+F8 to toggle the breakpoint.</span>
+
+
 <span class="s1">print(</span><span class="s3">&quot;This program by the end should model basic view predicitons for videos based on responses&quot;</span><span class="s1">)</span>
 <span class="s1">print(</span><span class="s3">&quot;Hello&quot;</span><span class="s1">)</span>
-  
-<span class="s0">#input function</span>
-<span class="s1">time = input(</span><span class="s3">&quot;Enter a time&quot;</span><span class="s1">)</span>
-<span class="s1">meme = input(</span><span class="s3">&quot;Enter a meme idea&quot;</span><span class="s1">)</span>
 
-<span class="s0">#basic math</span>
+<span class="s0"># input function</span>
+<span class="s1">time = input(</span><span class="s3">&quot;Enter a time that is either 2, 5, or 10 minutes: &quot;</span><span class="s1">)</span>
+<span class="s2">if </span><span class="s1">time </span><span class="s2">is not </span><span class="s4">2 </span><span class="s2">or </span><span class="s4">5 </span><span class="s2">or </span><span class="s4">10</span><span class="s1">:</span>
+    <span class="s1">print(</span><span class="s3">&quot;Error please try again: &quot;</span><span class="s1">)</span>
+    <span class="s1">time = input(</span><span class="s3">&quot;Enter a time that is either 2, 5, or 10 minutes: &quot;</span><span class="s1">)</span>
 
-<span class="s1">print(</span><span class="s4">8</span><span class="s1">*</span><span class="s4">7</span><span class="s1">)</span>
-<span class="s1">print(</span><span class="s4">8</span><span class="s1">+</span><span class="s4">7</span><span class="s1">)</span>
-<span class="s1">print(</span><span class="s4">8</span><span class="s1">/</span><span class="s4">7</span><span class="s1">)</span>
-<span class="s1">print(</span><span class="s4">8</span><span class="s1">-</span><span class="s4">7</span><span class="s1">)</span>
-<span class="s1">print(</span><span class="s4">8</span><span class="s1">//</span><span class="s4">7</span><span class="s1">)</span>
-<span class="s1">print(</span><span class="s4">8</span><span class="s1">%</span><span class="s4">7</span><span class="s1">)</span>
-<span class="s1">print(</span><span class="s4">8</span><span class="s1">**</span><span class="s4">7</span><span class="s1">)</span>
+<span class="s1">meme = input(</span><span class="s3">&quot;Enter a meme idea that is either gaming, music, or ships: &quot;</span><span class="s1">)</span>
+<span class="s0"># calculations for views</span>
+<span class="s0"># gaming section</span>
+<span class="s2">if </span><span class="s1">time </span><span class="s2">is not </span><span class="s1">gaming </span><span class="s2">or </span><span class="s1">music </span><span class="s2">or </span><span class="s1">ships:</span>
+    <span class="s1">print(</span><span class="s3">&quot;Error not a valid idea. Please try again: &quot;</span><span class="s1">)</span>
+    <span class="s1">meme = input(</span><span class="s3">&quot;Enter a meme idea that is either gaming, music, or ships: &quot;</span><span class="s1">)</span>
+<span class="s2">if </span><span class="s1">time == </span><span class="s4">2 </span><span class="s2">and </span><span class="s1">meme == </span><span class="s3">&quot;gaming&quot;</span><span class="s1">:</span>
+    <span class="s1">print(</span><span class="s3">&quot;Expected views: 30&quot;</span><span class="s1">)</span>
+<span class="s2">if </span><span class="s1">time == </span><span class="s4">5 </span><span class="s2">and </span><span class="s1">meme == </span><span class="s3">&quot;gaming&quot;</span><span class="s1">:</span>
+    <span class="s1">print(</span><span class="s3">&quot;Expected Views: 15&quot;</span><span class="s1">)</span>
+<span class="s2">if </span><span class="s1">time == </span><span class="s4">10 </span><span class="s2">and </span><span class="s1">meme == </span><span class="s3">&quot;gaming&quot;</span><span class="s1">:</span>
+    <span class="s1">print(</span><span class="s3">&quot;Expected views: 200&quot;</span><span class="s1">)</span>
+<span class="s0"># basic math</span>
+<span class="s0"># multiplication</span>
+<span class="s1">print(</span><span class="s4">8 </span><span class="s1">* </span><span class="s4">7</span><span class="s1">)</span>
+<span class="s0"># addition</span>
+<span class="s1">print(</span><span class="s4">8 </span><span class="s1">+ </span><span class="s4">7</span><span class="s1">)</span>
+<span class="s0"># division</span>
+<span class="s1">print(</span><span class="s4">8 </span><span class="s1">/ </span><span class="s4">7</span><span class="s1">)</span>
+<span class="s0"># subtraction</span>
+<span class="s1">print(</span><span class="s4">8 </span><span class="s1">- </span><span class="s4">7</span><span class="s1">)</span>
+<span class="s0"># remainder</span>
+<span class="s1">print(</span><span class="s4">8 </span><span class="s1">// </span><span class="s4">7</span><span class="s1">)</span>
+<span class="s0"># percentage</span>
+<span class="s1">print(</span><span class="s4">8 </span><span class="s1">% </span><span class="s4">7</span><span class="s1">)</span>
+<span class="s0"># to the power of</span>
+<span class="s1">print(</span><span class="s4">8 </span><span class="s1">** </span><span class="s4">7</span><span class="s1">)</span>
+<span class="s0"># greater than or equal to</span>
 <span class="s1">print(</span><span class="s4">5 </span><span class="s1">&gt;= </span><span class="s4">3</span><span class="s1">)</span>
-<span class="s1">print(</span><span class="s4">5 </span><span class="s1">= </span><span class="s4">3</span><span class="s1">)</span>
+<span class="s0"># equals</span>
+<span class="s1">print(</span><span class="s4">5 </span><span class="s1">== </span><span class="s4">3</span><span class="s1">)</span>
+<span class="s0"># not equal to</span>
+<span class="s1">print(</span><span class="s4">9 </span><span class="s1">!= </span><span class="s4">5</span><span class="s1">)</span>
+<span class="s0"># greater than</span>
+<span class="s1">print(</span><span class="s4">9 </span><span class="s1">&gt; </span><span class="s4">5</span><span class="s1">)</span>
+<span class="s0"># less than</span>
+<span class="s1">print(</span><span class="s4">9 </span><span class="s1">&lt; </span><span class="s4">5</span><span class="s1">)</span>
+<span class="s0"># greater than or equal to</span>
+<span class="s1">print(</span><span class="s4">9 </span><span class="s1">&gt;= </span><span class="s4">9</span><span class="s1">)</span>
+<span class="s0"># less than or equal to</span>
+<span class="s1">print(</span><span class="s4">9 </span><span class="s1">&lt;= </span><span class="s4">10</span><span class="s1">)</span>
+
+<span class="s0">#####For loops####</span>
+<span class="s2">import </span><span class="s1">time</span>
+
+<span class="s0"># For and Range and in()</span>
+<span class="s2">for </span><span class="s1">seconds </span><span class="s2">in </span><span class="s1">range(</span><span class="s4">10</span><span class="s2">, </span><span class="s4">0</span><span class="s2">, </span><span class="s1">-</span><span class="s4">1</span><span class="s1">):</span>
+    <span class="s1">print(seconds)</span>
+    <span class="s1">time.sleep(</span><span class="s4">1</span><span class="s1">)</span>
+    <span class="s2">while </span><span class="s1">seconds </span><span class="s2">in </span><span class="s1">range(</span><span class="s4">10</span><span class="s2">, </span><span class="s4">0</span><span class="s2">, </span><span class="s4">1</span><span class="s1">):</span>
+        <span class="s1">print(</span><span class="s3">&quot;Have A &quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Happy New Year!&quot;</span><span class="s1">)</span>
+
+
+<span class="s0"># def function</span>
+<span class="s2">def </span><span class="s1">thisisoneword():</span>
+    <span class="s1">print(</span><span class="s3">&quot;This is not one word&quot;</span><span class="s1">)</span>
+
+
+<span class="s1">thisisoneword()</span>
+<span class="s1">thisisoneword()</span>
+<span class="s1">thisisoneword()</span>
+
+<span class="s0"># and or booleans</span>
+<span class="s1">x = print(</span><span class="s4">9 </span><span class="s1">- </span><span class="s4">5</span><span class="s1">)</span>
+<span class="s2">if </span><span class="s1">x </span><span class="s2">is </span><span class="s4">4 </span><span class="s2">or </span><span class="s4">4.0</span><span class="s1">:</span>
+    <span class="s1">print(</span><span class="s3">&quot;nice math!&quot;</span><span class="s1">)</span>
+
+<span class="s0"># not statement</span>
+<span class="s1">x = print(</span><span class="s4">9 </span><span class="s1">- </span><span class="s4">1</span><span class="s1">)</span>
+<span class="s2">if </span><span class="s1">x </span><span class="s2">is not </span><span class="s4">5</span><span class="s1">:</span>
+    <span class="s1">print(</span><span class="s3">&quot;it is not 5&quot;</span><span class="s1">)</span>
+<span class="s0"># print statement</span>
 <span class="s1">print()</span>
 <span class="s0"># Press the green button in the gutter to run the script.</span>
 <span class="s2">if </span><span class="s1">__name__ == </span><span class="s3">'__main__'</span><span class="s1">:</span>
